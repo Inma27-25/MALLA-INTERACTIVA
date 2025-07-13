@@ -2,12 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Malla Interactiva</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Malla Interactiva Medicina Veterinaria</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Malla Interactiva</h1>
-    <div class="grid-container" id="gridContainer"></div>
+    <h1>Malla Curricular - Medicina Veterinaria</h1>
+    <div id="malla">
+
+        <div class="asignatura" data-codigo="MV-1000">Anatomía Veterinaria I</div>
+        <div class="asignatura" data-codigo="MV-1010" data-prerequisitos="MV-1000">Anatomía Veterinaria II</div>
+        <div class="asignatura" data-codigo="MV-1500">Fisiología General</div>
+        <div class="asignatura" data-codigo="MV-1510" data-prerequisitos="MV-1500">Fisiología Sistémica</div>
+        <div class="asignatura" data-codigo="MV-2100" data-prerequisitos="MV-1305">Farmacología General</div>
+        <div class="asignatura" data-codigo="MV-2110" data-prerequisitos="MV-2100">Farmacología Sistémica</div>
+        <div class="asignatura" data-codigo="MV-4520" data-prerequisitos="MV-1830">Semiología Mayores</div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
